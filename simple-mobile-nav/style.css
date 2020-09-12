@@ -1,0 +1,40 @@
+/* Page styling -- Not needed to replicate button visuals. */
+html,
+body {
+    margin: 0;
+    background-color: #5284bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navigation-bar {
+    width: 450px;
+    height: 150px;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    font-size: 23px;
+}
+
+.nav-icon {
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s ease box-shadow;
+}
+
+.selected {
+    -webkit-box-shadow: inset 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+    transition: 1s ease box-shadow;
+}
