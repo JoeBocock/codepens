@@ -1,0 +1,102 @@
+html,
+body {
+    --light-blue: #596886;
+    --cream: #ffd5af;
+    --shadow-blue: #052b4a;
+    margin: 0;
+    background: var(--light-blue);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+form {
+    margin-bottom: 20%;
+}
+
+input {
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    min-height: 50px;
+    min-width: 300px;
+    color: var(--cream);
+    background: linear-gradient(to right, var(--cream) 50%, #052b4a 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease;
+    border-style: solid;
+    border-color: var(--cream);
+}
+
+input::placeholder {
+    color: var(--cream);
+}
+
+input:focus {
+    background-color: var(--cream);
+    color: var(--shadow-blue);
+    background-position: left bottom;
+    outline: none;
+}
+
+i {
+    color: var(--cream);
+    position: absolute;
+    padding: 18px 20px 10px;
+    font-size: larger;
+}
+
+.field {
+    margin: 20px;
+}
+
+button {
+    font-size: large;
+    padding: 15px 100px 15px;
+    border-radius: 30px;
+    border: 1px solid var(--cream);
+    background: var(--shadow-blue);
+    color: var(--cream);
+    cursor: pointer;
+    outline: none;
+    transform: scaleX(1);
+    transition: 0.5s all ease;
+}
+
+.loading {
+    padding: 15px 50px 15px;
+    background: var(--cream);
+    color: var(--shadow-blue);
+}
+
+.submit-button {
+    text-align: center;
+    padding-top: 60px;
+}
+
+svg {
+    margin-left: 20px;
+    background: var(--light-blue);
+}
+
+.spinner {
+    border: 6px solid var(--shadow-blue);
+    border-top: 6px solid var(--light-blue);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
