@@ -5,7 +5,6 @@ body {
     --shadow-blue: #052b4a;
     margin: 0;
     background: var(--light-blue);
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
