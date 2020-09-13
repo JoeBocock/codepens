@@ -7,3 +7,5 @@ Here you can find a dump of any CodePens I've done. Feel free to take them, use 
 -   [simple-app-navigation](https://codepen.io/joebocock/pen/KKzRbdr)
 -   [minimal-timeline](https://codepen.io/joebocock/pen/BaKxMBM)
 -   [animated-link](https://codepen.io/joebocock/pen/wvGjNKb)
+-   [annoying-toggle](https://codepen.io/joebocock/pen/YzqLmVV)
+-   [swinging-lightbulb](https://codepen.io/joebocock/pen/eYZKOjR)
