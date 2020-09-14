@@ -48,9 +48,12 @@ body {
     height: 40px;
     background-color: #dbf7ff;
     top: 30px;
-    left: 15px;
+    left: 13px;
     border: #003366 solid 2px;
     border-bottom: #003366 solid 4px;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .window::after {
@@ -64,26 +67,63 @@ body {
 }
 
 .window:nth-of-type(2) {
-    left: 50px;
+    left: 48px;
 }
 
 .window:nth-of-type(3) {
-    left: 85px;
+    left: 83px;
 }
 
 .window:nth-of-type(4) {
     top: 90px;
-    left: 15px;
-}
-
-.window:nth-of-type(5) {
-    top: 90px;
-    left: 50px;
+    left: 13px;
 }
 
 .window:nth-of-type(6) {
     top: 90px;
-    left: 85px;
+    left: 83px;
+}
+
+.window-alt {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #dbf7ff;
+    top: 30px;
+    left: 13px;
+    border: #003366 solid 2px;
+    border-bottom: #003366 solid 4px;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.window-alt::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background-color: #b5aeae;
+    border-bottom: #003366 solid 2px;
+    z-index: 100;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.window-alt::after {
+    content: '';
+    top: 44px;
+    left: -2px;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.window-alt:nth-of-type(1) {
+    top: 90px;
+    left: 48px;
 }
 
 .streak {
@@ -92,7 +132,125 @@ body {
     width: 3px;
     height: 20px;
     border-radius: 50%;
-    transform: rotate(20deg);
-    left: 7px;
+    transform: rotate(16deg);
+    left: 6px;
     top: 6px;
+}
+
+.streak::after {
+    content: '';
+    position: absolute;
+    background-color: #a7ccd6;
+    width: 3px;
+    height: 10px;
+    border-radius: 50%;
+    left: 6px;
+    top: 2px;
+}
+
+.streak::before {
+    content: '';
+    position: absolute;
+    background-color: #a7ccd6;
+    width: 3px;
+    height: 10px;
+    border-radius: 50%;
+    left: 6px;
+    top: 19px;
+}
+
+.pullie {
+    position: absolute;
+    background-color: #003366;
+    height: 15px;
+    width: 2px;
+    top: 18px;
+    left: 9px;
+}
+
+.pullie::after {
+    content: '';
+    position: absolute;
+    background-color: #003366;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    top: 12px;
+    left: -1px;
+}
+
+.door {
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 50px;
+    bottom: 0;
+    left: 38px;
+    border: #003366 solid 3px;
+    border-bottom: none;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.door::after {
+    content: '';
+    position: absolute;
+    background-color: #003366;
+    width: 28px;
+    height: 2px;
+    top: 35px;
+    left: 6px;
+}
+
+.door-window {
+    position: absolute;
+    background-color: #dbf7ff;
+    height: 25px;
+    width: 11px;
+    left: 3px;
+    border: #003366 solid 2px;
+    top: 3px;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.door-window::after {
+    content: '';
+    position: absolute;
+    background-color: #dbf7ff;
+    height: 25px;
+    width: 11px;
+    left: 17px;
+    border: #003366 solid 2px;
+    top: -2px;
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box {
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    top: 40px;
+    left: 3px;
+    border: #003366 solid 2px;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    top: -2px;
+    left: 16px;
+    border: #003366 solid 2px;
+    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
 }
