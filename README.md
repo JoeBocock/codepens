@@ -9,3 +9,4 @@ Here you can find a dump of any CodePens I've done. Feel free to take them, use 
 -   [animated-link](https://codepen.io/joebocock/pen/wvGjNKb)
 -   [annoying-toggle](https://codepen.io/joebocock/pen/YzqLmVV)
 -   [swinging-lightbulb](https://codepen.io/joebocock/pen/eYZKOjR)
+-   [flat-art-building](https://codepen.io/joebocock/pen/XWdYxWX)
