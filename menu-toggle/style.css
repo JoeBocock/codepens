@@ -1,0 +1,77 @@
+.container {
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#burger-menu {
+    width: 120px;
+    height: 90px;
+    position: relative;
+    margin: 50px auto;
+    cursor: pointer;
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: 0.5s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+    -moz-transition: 0.5s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+    -o-transition: 0.5s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+    -webkit-transition: 0.5s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+}
+
+#burger-menu span {
+    background: black;
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: 0.25s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+    -moz-transition: 0.25s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+    -o-transition: 0.25s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+    -webkit-transition: 0.25s cubic-bezier(0.43, 0.58, 0.47, 0.62);
+}
+
+#burger-menu span:nth-child(1) {
+    top: 0px;
+}
+
+#burger-menu span:nth-child(2) {
+    top: 36px;
+}
+
+#burger-menu span:nth-child(3) {
+    top: 72px;
+}
+
+#burger-menu.open span:nth-child(1) {
+    top: 36px;
+    transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#burger-menu.open span:nth-child(2) {
+    opacity: 0;
+    left: 30px;
+}
+
+#burger-menu.open span:nth-child(3) {
+    top: 36px;
+    transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
